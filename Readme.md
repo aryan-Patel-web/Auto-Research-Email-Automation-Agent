@@ -1,4 +1,3 @@
-# 📡 Auto Research + Email Automation Agent
 
 # 🤖 Auto Research + Email Automation Agent
 
