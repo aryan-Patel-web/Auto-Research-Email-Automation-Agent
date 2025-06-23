@@ -1,0 +1,24 @@
+langchain_community
+langchain
+langchain_groq
+
+langchain-core
+# langchain_hugginface
+
+
+tiktoken
+cassio
+chromadb
+
+arxiv
+wikipedia
+
+bs4
+
+
+dill # to dump and load pickle file
+
+
+flask
+pandas
+
