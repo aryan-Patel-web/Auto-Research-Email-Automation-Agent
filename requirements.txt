@@ -1,11 +1,12 @@
 langchain_community
 langchain
 langchain_groq
-
+langchain-huggingface
 langchain-core
 # langchain_hugginface
-
-
+langchain-astradb
+astrapy
+sentence-transformers
 tiktoken
 cassio
 chromadb
