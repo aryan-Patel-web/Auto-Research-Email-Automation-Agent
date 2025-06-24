@@ -1,14 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>AutoResearchMailer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 40px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    input[type="text"] {
+      width: 80%;
+      max-width: 500px;
+      padding: 12px 15px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    button {
+      padding: 12px 28px;
+      font-size: 1rem;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <h2>🔍 AI Research Automation Agent</h2>
-  <form action="/run" method="post">
-    <input type="text" name="query" placeholder="Enter research topic" required style="width: 300px;">
-    <p>📥 Summary will be sent to all emails listed in <code>emails.csv</code></p>
-    <button type="submit">Start</button>
-  </form>
+  <div class="container">
+    <h1>🔍 AI Research Automation Agent</h1>
+    <p>Enter a research topic below. The AI will summarize it and email all recipients listed in <code>emails.csv</code>.</p>
+
+    <form action="/run" method="post">
+      <input type="text" name="query" placeholder="E.g. What is a LangGraph AI agent?" required>
+      <br>
+      <button type="submit">📨 Generate Summary & Send Email</button>
+    </form>
+  </div>
 </body>
 </html>
